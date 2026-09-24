@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+
+
+}
+
+header{
+    display: flex;
+    padding: 1rem 3.6875rem;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    background: rgba(255, 255, 255, 0.93);
+    box-shadow: 0 -6px 29.1px 0 rgba(5, 5, 5, 0.14);
+    backdrop-filter: blur(3.4000000953674316px);
+    flex: 1 0 0;
+}
+
+.csslogo{
+    width: 100%;
+    display: flex;
+}
+
+.csslogo img{
+    margin: auto;
+}
+
+header img{
+    height: 3.3rem;
+    width: auto;
+}
+
+.headlinkcont{
+    display: flex;
+    gap: 1.35rem;
+}
+
+.headlinkselected a{
+    color: #BD142F !important;
+}
+
+.headlink{
+    position: relative;
+
+}
+
+.headlinkcont a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.selectedunderline {
+    width: 100% !important;
+}
+
+.underline{
+    content: "";
+    position: absolute;
+    bottom: -0.25rem;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #BD142F;
+    transition: width 0.3s ease-in-out;
+}
+
+
+/* Base state for the active/selected tab */
+.selectedunderline {
+  width: 100%;
+}
+
+/* Hovering on headlink expands or changes the underline */
+.headlink:hover .underline {
+  width: 100%;
+}
+
+.headlink:hover a {
+  color: #BD142F;
+}
+
+.cta-button{
+    display: flex;
+    padding: 0.4375rem 0.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+}
