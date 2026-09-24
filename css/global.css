@@ -7,6 +7,11 @@
 
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 header{
     display: flex;
     padding: 1rem 3.6875rem;
@@ -83,6 +88,7 @@ header img{
 
 .headlink:hover a {
   color: #BD142F;
+  text-decoration: none;
 }
 
 .cta-button{
@@ -91,4 +97,6 @@ header img{
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
+    color: #FFFFFF;
+    background: #BD142F;
 }
