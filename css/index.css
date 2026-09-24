@@ -1,8 +1,90 @@
-.herotext{
+.hero{
+    background-image: url('../public/cics building hero image.png');
+    background-size: cover;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 5rem;
+    align-items: center;
+    position: relative;
+}
+
+.heroText{
     display: flex;
-    width: 34.8125rem;
+    width: 35rem;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.5rem;
+    gap: 1rem;
+    position: relative;
+    z-index: 1;
+}
 
+.heroText h1{
+    color: #FFF;
+    font-size: 2.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.heroText p{
+    color: #FFF;
+    font-size: 1.25rem;
+    font-style: normal;
+    line-height: normal;
+}
+
+.bgGradient{
+    left: 0;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    transform: scaleX(-1);
+    content: " ";
+    position: absolute;
+    background: linear-gradient(270deg, rgba(20, 1, 1, 0.86) 29.24%, rgba(48, 3, 3, 0.00) 100%);
+}
+
+.underline-button{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    transition: .5s;
+    height: 100%;
+    background: #fff;
+}
+
+.unending-grace-section{
+    display: flex;
+    max-width: 40rem;
+    text-align: center;
+    width: 90%;
+    padding: 3rem 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+    margin: auto;
+}
+
+.unending-grace-section h1, .unending-grace-section span{
+    color: #1F180D;
+    text-align: center;
+    font-family: "Inria Serif", serif;
+    font-size: 2.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.unending-grace-section span{
+    color: #FF9500;
+}
+
+.unending-grace-section p{
+    color: #1F180D;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
