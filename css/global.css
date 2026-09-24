@@ -88,6 +88,7 @@ header img{
 
 .headlink:hover a {
   color: #BD142F;
+  text-decoration: none;
 }
 
 .cta-button{
