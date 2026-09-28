@@ -5,6 +5,11 @@
     font-family: "Inter", sans-serif;
 }
 
+body {
+    background-color: #fbfbfb;
+}
+
+
 a{
     text-decoration: none;
     color: inherit;
