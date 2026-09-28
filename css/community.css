@@ -1,20 +1,122 @@
 .community-container {
-position: relative;
-    width: 100%;
+    position: relative;
     height: 360px;
-    overflow: hidden;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    background-color: #1a1a1a;
-}
-
-.community-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    align-items: center;
+    color:white;
     text-align: center;
-    color: #fff;
 }
 
+.community-hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    z-index: -1;;
+}
+
+#organizations {
+    display: grid;
+    grid-template-columns: 1fr;   
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 16px;
+    gap: 16px;
+}
+
+.organizations-title {
+    color: #591416;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+
+.organization-cnag, 
+.organization-site, 
+.organization-iss, 
+.organization-css, 
+.organization-pax {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.cnag-icon {
+    width: 5rem;
+    height: 5rem;
+    min-width: 60px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: url(../public/cnag.png) lightgray 50% / cover no-repeat;
+    box-shadow: 0 5px 18.1px -16px #000;
+}
+
+.site-icon {
+    width: 5rem;
+    height: 5rem;
+    min-width: 5rem;
+    flex-shrink: 0;
+    border-radius: 8px;
+    display: grid;
+    background: url(../public/site.png) lightgray 50% / cover no-repeat;
+    box-shadow: 0 5px 18.1px -16px #000;
+}
+
+.iss-icon {
+    width: 5rem;
+    height: 5rem;
+    min-width: 5rem;
+    flex-shrink: 0;
+    border-radius: 8px;
+    display: grid;
+    background: url(../public/iss.png) lightgray 50% / cover no-repeat;
+    box-shadow: 0 5px 18.1px -16px #000;
+}
+
+.css-icon {
+    width: 5rem;
+    height: 5rem;
+    min-width: 5rem;
+    flex-shrink: 0;
+    border-radius: 8px;
+    display: grid;
+    background: url(../public/css.png) lightgray 50% / cover no-repeat;
+    box-shadow: 0 5px 18.1px -16px #000;
+}
+
+.pax-romana-icon {
+    width: 5rem;
+    height: 5rem;
+    min-width: 5rem;
+    flex-shrink: 0;
+    border-radius: 8px;
+    display: grid;
+    background: url(../public/pax-romana.png) lightgray 50% / cover no-repeat;
+    box-shadow: 0 5px 18.1px -16px #000;
+}
+
+.org-info {
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+}
+
+
+.banner-heading {
+    background: linear-gradient(90deg, #BD142F 0%, #570916 63%, #570916 100%);
+    color: white;
+    text-align:center;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: bold;
+}
