@@ -213,6 +213,26 @@ header img{
     text-decoration: underline;
 }
 
+.heading-big-red{
+    background: #BD142F;
+    display: flex;
+    width: fit-content;
+    color: #ffffff;
+    padding: 0.4375rem 0.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    margin: auto;
+}
+
+.heading-big-red h1{
+    font-family: "Inria Serif", serif;
+    color: #FFF;
+    text-align: center;
+    font-size: 2.1875rem;
+    font-weight: 700;
+}
+
 /* Responsive adjustments */
 @media (max-width: 900px) {
     .footer-grid {
