@@ -34,6 +34,12 @@ header{
     margin: auto;
 }
 
+header .logo-cont{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
 header img{
     height: 3.3rem;
     width: auto;
@@ -70,7 +76,7 @@ header img{
     position: absolute;
     bottom: -0.25rem;
     left: 0;
-    width: 0%;
+    width: 0;
     height: 2px;
     background-color: #BD142F;
     transition: width 0.3s ease-in-out;
@@ -120,4 +126,125 @@ header img{
 
 .cta-button:hover .underline-button{
     width: 100%;
+}
+
+.yellowText{
+    color: #FF9500;
+}
+
+
+.site-footer {
+    /* Rich gradient background matching mockup */
+    background: linear-gradient(135deg, #7a0016 0%, #4a000d 100%);
+    color: #ffffff;
+    padding: 3rem 5rem;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Header/Branding section */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.brand-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.brand-text {
+    font-size: 1.25rem;
+    font-family: Georgia, serif; /* Serif font matching header branding */
+    line-height: 1.2;
+}
+
+.portal-logo {
+    height: 38px;
+    object-fit: contain;
+}
+
+/* Layout Columns */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.footer-heading {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    header{
+        flex-direction: column;
+        row-gap: 15px;
+        padding: 1rem 1.6rem;
+    }
+
+    header .logo-cont{
+        width: 100%;
+    }
+
+    .headlinkcont{
+        width: 100%;
+        padding: 0 2rem;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .site-footer{
+        padding: 3rem 2.5rem
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
 }
