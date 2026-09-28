@@ -1,8 +1,335 @@
-.herotext{
+.hero{
+    background-image: url('../public/cics building hero image.png');
+    background-size: cover;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 5rem;
+    align-items: center;
+    position: relative;
+}
+
+.heroText{
     display: flex;
-    width: 34.8125rem;
+    width: 35rem;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.5rem;
+    gap: 1rem;
+    position: relative;
+    z-index: 1;
+}
 
+.heroText h1{
+    color: #FFF;
+    font-size: 2.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.heroText p{
+    color: #FFF;
+    font-size: 1.25rem;
+    font-style: normal;
+    line-height: normal;
+}
+
+.bgGradient{
+    left: 0;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    transform: scaleX(-1);
+    content: " ";
+    position: absolute;
+    background: linear-gradient(270deg, rgba(20, 1, 1, 0.86) 29.24%, rgba(48, 3, 3, 0.00) 100%);
+}
+
+.underline-button{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    transition: .5s;
+    height: 100%;
+    background: #fff;
+}
+
+.unending-grace-section{
+    display: flex;
+    max-width: 40rem;
+    text-align: center;
+    width: 90%;
+    padding: 3rem 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+    margin: auto;
+}
+
+.unending-grace-section h1, .unending-grace-section span{
+    color: #1F180D;
+    text-align: center;
+    font-family: "Inria Serif", serif;
+    font-size: 2.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.unending-grace-section span{
+    color: #FF9500;
+}
+
+.unending-grace-section p{
+    color: #1F180D;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.mv-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 840px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.mv-container h2{
+    font-family: "Inria Serif", serif;
+    font-size: 1.7rem;
+}
+
+.mv-container p{
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.mv-textcont{
+    flex:1;
+    align-self: center;
+}
+
+.mv-imagecont{
+    width: 60%;
+    height: 360px;
+    position: relative;
+}
+
+.mv-imagecont img{
+    position:absolute;
+    max-width: 115%;
+}
+
+.mv-imgtext-cont{
+    display: flex;
+}
+
+.degrees-offered-cont{
+    display: flex;
+    padding: 4rem 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75rem;
+    align-self: stretch;
+    background: linear-gradient(112deg, #781B2A -18.59%, #2F0008 48.91%);
+    color: white;
+}
+
+.degrees-offered-cont h1{
+    text-align: center;
+    font-family: "Inria Serif", serif;
+    font-size: 2.8125rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #F9F9F9 0.4%, #E9E9E9 103.04%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.degrees-offered-inner{
+    display: flex;
+    width: 90%;
+    max-width: 40rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.1875rem;
+}
+
+.degrees-offered-chip{
+    display: flex;
+    padding: 1.6875rem 1.75rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    align-self: stretch;
+    border-radius: 0.375rem;
+    border: 1px solid #FFF;
+    background: #761322;
+}
+
+.degrees-offered-chip h2{
+    width: 100%;
+    color: #FFF;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.degrees-offered-chip p{
+    color: #FFF;
+    text-align: justify;
+    font-size: 1rem;
+}
+/* Base Layout Styles */
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.title {
+    color: #f28c00; /* Warm orange matching mockup */
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.office-details h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 0.25rem;
+}
+
+.office-details p,
+.office-details address {
+    font-style: normal;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-list li {
+    margin-bottom: 0.25rem;
+}
+
+.contact-list a {
+    color: #111;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+/* Map Wrapper & Styling */
+.map-wrapper {
+    flex: 1;
+    height: 400px;
+    border-radius: 16px; /* Rounded corners matching mockup */
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    pointer-events: none; /* Disables drag/zoom controls */
+}
+
+/* Responsive collapse for small screens */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .map-wrapper {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .mv-imgtext-cont{
+        flex-direction: column;
+    }
+    .mv-imgtext-cont:nth-child(2){
+        flex-direction: column-reverse;
+    }
+    .mv-container{
+        max-width: 24rem;
+        text-align: center;
+    }
+    .mv-imagecont{
+        position: relative;
+        width: 100%;
+        height: fit-content;
+    }
+    .mv-imagecont img{
+        position: relative;
+        width: 130%;
+        height: fit-content;
+    }
+    .mv-imagecont-1 img{
+        transform: translate(-85px,10px);
+    }
+    .mv-imagecont-2 img{
+        transform: translate(-35px,10px);
+    }
+    h1, h1 span{
+        font-size: 2rem !important;
+    }
+
+    h2{
+        font-size: 1.5rem !important;
+    }
+
+    h3{
+        font-size: 1.2rem !important;
+    }
+
+    .contact-section{
+        align-items: baseline;
+    }
+    .hero{
+        padding: 4rem 2rem;
+        display: flex;
+        background-position: center;
+    }
+    .heroText{
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .map-wrapper{
+        height: 30%;
+    }
+
+    .bgGradient{
+        background: linear-gradient(270deg, rgba(20, 1, 1, 0.86) 29.24%, rgba(48, 3, 3, 0.00) 100%);
+        width: 500px;
+    }
 }
