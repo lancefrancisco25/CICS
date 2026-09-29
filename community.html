@@ -4,30 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/community.css">
     <title>Community | UST CICS</title>
 </head>
 <body>
     <header>
-        <img src="./public/ust logo.png" alt="UST Logo">
-            <img src="./public/cics logo.png" alt="CICS Logo">
+    <div class="logo-cont">
+        <a href="./index.html">
+            <img src="./public/ust logo.png" alt="UST Logo">
+        </a>
+        <img src="./public/cics logo.png" alt="CICS Logo">
+    </div>
+    <div class="headlinkcont">
+        <div class=" headlink">
+            <a href="#">Home</a>
+            <span class=" underline"></span>
         </div>
-        <div class="headlinkcont">
-            <div class="headlinkselected headlink">
-                <a href="#">Home</a>
-                <span class="selectedunderline underline"></span>
-            </div>
-            <div class="headlink">
-                <a href="#">Program</a>
-                <span class="underline"></span>
-            </div>
-            <div class="headlink">
-                <a href="#">Community</a>
-                <span class="underline"></span>
-            </div>
+        <div class="headlink">
+            <a href="./program.html">Program</a>
+            <span class="underline"></span>
         </div>
-    </header>
+        <div class="headlinkselected headlink">
+            <a href="./community.html">Community</a>
+            <span class="selectedunderline underline"></span>
+        </div>
+    </div>
+</header>
 
     <div class="community-container"> 
        <div class="community-hero-image">
@@ -167,20 +169,26 @@
                 <span class="news-date">August 15,2026</span>
                 <h3>Welcome CICS Freshies!</h3>
                 <p>The College of information and Computing Sciences welcomed its newest members as they begin their Thomasian journey through the ROARientation and Thomasian Welcome Walk 2026.</p>
-
-                <a href="#" class="news-btn">Read More →</a>
+                <div class="cta-button">
+                    <a href="#">Read More →</a>
+                    <span class="underline-button"></span>
+                </div>
             </div>
         </div>
 
         <div class="news-grid">
             <div class="news-card">
                 <img src="./public/news1.png" alt="News Image 1" class="news-img">
-
                 <div class="news-content">
-                <span class="news-date">May 13,2026</span>
-                <h4>UST IT Professor Joins CSTA Board</h4>
-                <p>Department of Information Technology academic staff Asst. Prof. Edwin S. de Guzman, DIT, was elected International Teacher Representative and among the Board Directors of the Computer Science Teachers Association (CSTA).</p>
-                <a href="#" class="news-btn">Read More →</a>
+                    <div>
+                        <span class="news-date">May 13,2026</span>
+                        <h4>UST IT Professor Joins CSTA Board</h4>
+                        <p>Department of Information Technology academic staff Asst. Prof. Edwin S. de Guzman, DIT, was elected International Teacher Representative and among the Board Directors of the Computer Science Teachers Association (CSTA).</p>
+                    </div>
+                    <div class="cta-button">
+                        <a href="#">Read More →</a>
+                        <span class="underline-button"></span>
+                    </div>
                 </div>
             </div>
 
@@ -188,21 +196,30 @@
                 <img src="./public/news2.png" alt="News Image 2" class="news-img">
 
                  <div class="news-content">
-                <span class="news-date">March 11,2026</span>
-                <h4>UST Hands Over Rescue Robot Research to PH Army & BFP</h4>
-                <p>By the means of the Department of Marketing Management, UST formally turned over the market validation research for Project SAFEGUARD Robot.</p>
-                <a href="#" class="news-btn">Read More →</a>
+                     <div>
+                         <span class="news-date">March 11,2026</span>
+                         <h4>UST Hands Over Rescue Robot Research to PH Army & BFP</h4>
+                         <p>By the means of the Department of Marketing Management, UST formally turned over the market validation research for Project SAFEGUARD Robot.</p>
+                     </div>
+                     <div class="cta-button">
+                         <a href="#">Read More →</a>
+                         <span class="underline-button"></span>
+                     </div>
                  </div>
             </div>
 
             <div class="news-card">
                 <img src="./public/news3.png" alt="News Image 3" class="news-img">
-
                 <div class="news-content">
-                <span class="news-date">December 09,2025</span>
-                <h4>UST & PH Army to Develop SAFEGUARD Robot</h4>
-                <p>UST and the Philippine Army formally disclose a research collaboration through the signing of a Memorandum of Agreement (MOA) for the Prototype Development of the SAFEGUARD Robot.</p>
-                <a href="#" class="news-btn">Read More →</a>
+                    <div>
+                        <span class="news-date">December 09,2025</span>
+                        <h4>UST & PH Army to Develop SAFEGUARD Robot</h4>
+                        <p>UST and the Philippine Army formally disclose a research collaboration through the signing of a Memorandum of Agreement (MOA) for the Prototype Development of the SAFEGUARD Robot.</p>
+                    </div>
+                    <div class="cta-button">
+                        <a href="#">Read More →</a>
+                        <span class="underline-button"></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -222,22 +239,19 @@
     </section>
 
     <footer class="site-footer">
-        <!-- Top Branding Bar -->
         <div class="footer-top">
             <div class="brand">
                 <img src="./public/cics%20logo.png" alt="CICS Logo" class="brand-logo">
                 <span class="brand-text">
-                    College of Information<br>and Computing Sciences
-                </span>
+                College of Information<br>and Computing Sciences
+            </span>
             </div>
             <div class="portal-link">
                 <img src="./public/myuste%20portal%20logo.png" alt="MyUSTe Portal" class="portal-logo">
             </div>
         </div>
 
-        <!-- Links Grid -->
         <div class="footer-grid">
-            <!-- Contact Column -->
             <div class="footer-col">
                 <h3 class="footer-heading">Contact Us</h3>
                 <ul class="footer-links">
@@ -247,39 +261,36 @@
                 </ul>
             </div>
 
-            <!-- About Column -->
             <div class="footer-col">
                 <h3 class="footer-heading">About</h3>
                 <ul class="footer-links">
-                    <li><a href="#">Overview</a></li>
-                    <li><a href="#">Vision</a></li>
-                    <li><a href="#">Mission</a></li>
-                    <li><a href="#">Degree Programs</a></li>
-                    <li><a href="#">Contact Information</a></li>
-                    <li><a href="#">Location on Campus</a></li>
+                    <li><a href="/index.html#overview">Overview</a></li>
+                    <li><a href="/index.html#vision">Vision</a></li>
+                    <li><a href="/index.html#mission">Mission</a></li>
+                    <li><a href="/program.html#degree-programs">Degree Programs</a></li>
+                    <li><a href="/index.html#contact-info">Contact Information</a></li>
+                    <li><a href="/index.html#location">Location on Campus</a></li>
                 </ul>
             </div>
 
-            <!-- Community Column -->
             <div class="footer-col">
                 <h3 class="footer-heading">Community</h3>
                 <ul class="footer-links">
-                    <li><a href="#">Student Organizations</a></li>
-                    <li><a href="#">Leadership</a></li>
-                    <li><a href="#">College Updates</a></li>
-                    <li><a href="#">Patron Saint</a></li>
+                    <li><a href="/community.html#student-organizations">Student Organizations</a></li>
+                    <li><a href="/community.html#leadership">Leadership</a></li>
+                    <li><a href="/community.html#updates">College Updates</a></li>
+                    <li><a href="/community.html#patron-saint">Patron Saint</a></li>
                 </ul>
             </div>
 
-            <!-- Programs Column -->
             <div class="footer-col">
                 <h3 class="footer-heading">Programs</h3>
                 <ul class="footer-links">
-                    <li><a href="#">Bachelor of Science in Computer Science</a></li>
-                    <li><a href="#">Bachelor of Science in Information Technology</a></li>
-                    <li><a href="#">Bachelor of Science in Information Systems</a></li>
-                    <li><a href="#">Departments</a></li>
-                    <li><a href="#">Recognitions</a></li>
+                    <li><a href="/program.html#bscs">Bachelor of Science in Computer Science</a></li>
+                    <li><a href="/program.html#bsit">Bachelor of Science in Information Technology</a></li>
+                    <li><a href="/program.html#bsis">Bachelor of Science in Information Systems</a></li>
+                    <li><a href="/program.html#departments">Departments</a></li>
+                    <li><a href="/program.html#recognitions">Recognitions</a></li>
                 </ul>
             </div>
         </div>
