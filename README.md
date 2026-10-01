@@ -17,4 +17,4 @@
    ```
 5. Always follow the font sizing on figma
 
-[View this website](https://lancefrancisco25.github.io/CICS-Website/) 
+[View this website](https://lancefrancisco25.github.io/CICS-Website/){:target="_blank"}
