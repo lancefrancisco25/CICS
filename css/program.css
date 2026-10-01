@@ -70,52 +70,58 @@
     align-self: stretch;
 }
 
-.program-comp-chip{
-    display: flex;
-    width: 20rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.1875rem;
-    text-align: center;
+.program-table-container{
+    width: 90%;
+    max-width: 60rem;
+    overflow-x: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.program-comp-chip-head{
-    display: flex;
-    min-height: 5rem; /* Changed from height: 5rem */
-    height: auto;
-    flex-direction: column;
-    align-items: center;
-    align-self: stretch;
+.program-comp-table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    text-align: left;
 }
 
-.program-comp-chip p{
-    color: #000;
-    text-align: center;
-    font-size: 1rem ;
-    font-weight: 400;
+.program-comp-table th,
+.program-comp-table td{
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid #e5e5e5;
+    vertical-align: top;
 }
 
-.program-comp-chip-head h1{
-    color: #600505;
-    font-size: 1.5625rem !important;
+.program-comp-table thead tr{
+    background-color: #781B2A;
+    color: #ffffff;
+}
+
+.program-comp-table th{
+    font-size: 1.1rem;
     font-weight: 700;
+    letter-spacing: 0.02em;
 }
 
-.program-comp-chip-head h3{
-    color: #000;
-    font-size: 1rem;
-    font-weight: 500;
+.program-comp-table td strong{
+    color: #600505;
+    font-size: 1.05rem;
 }
 
-.program-comp-chip-cont{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 4rem;
-    align-self: stretch;
-    flex-wrap: wrap;
+.program-comp-table td ul{
+    margin: 0;
+    padding-left: 1.25rem;
+    color: #333333;
+}
 
+.program-comp-table td li{
+    margin-bottom: 0.35rem;
+    line-height: 1.4;
+}
+
+.program-comp-table td li:last-child{
+    margin-bottom: 0;
 }
 
 .degrees-comp-main-cont{
@@ -202,10 +208,6 @@
         padding: 0 1rem;
     }
 
-    .program-comp-chip-cont {
-        gap: 2rem;
-    }
-
     .recog-cont-chip {
         gap: 2rem;
         padding: 0 1rem;
@@ -236,6 +238,16 @@
 
     .program-comp-main-cont {
         padding: 2.5rem 1rem;
+    }
+
+    .program-table-container {
+        width: 100%;
+    }
+
+    .program-comp-table th,
+    .program-comp-table td {
+        padding: 1rem;
+        font-size: 0.95rem;
     }
 
     .degrees-comp-chip-cont {
@@ -277,11 +289,6 @@
 @media (max-width: 480px) {
     .degrees-offered-cont h1 {
         font-size: 1.75rem;
-    }
-
-    .program-comp-chip {
-        width: 100%;
-        max-width: 20rem;
     }
 
     .recog-cont-chip div {
